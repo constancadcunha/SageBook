@@ -70,8 +70,7 @@ To validate design decisions, SageBook includes a **robust evaluation plan** fea
 ## 📁 How to View the Project
 
 👉 Visit the live case study:  
-**[https://your-username.github.io/sagebook-case-study](https://your-username.github.io/sagebook-case-study)**  
-(Replace with your GitHub Pages link)
+**[TBD](https://your-username.github.io/sagebook-case-study)**  
 
 🧾 Or, download and open `index.html` locally in your browser.
 
