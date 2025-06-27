@@ -1,6 +1,6 @@
 # 🌿 SageBook – UX/UI Case Study  
 **An interactive cooking and baking learning app**  
-**View the Live Case Study →**[**Here**](https://constancadcunha.github.io/SageBook/)  
+**View the Live Case Study → **[**Here**](https://constancadcunha.github.io/SageBook/)  
 
 ---
 
