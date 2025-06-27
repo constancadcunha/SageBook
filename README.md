@@ -94,12 +94,10 @@ UX Designer & Researcher ✧
 
 ---
 
-> “SageBook isn’t just a recipe app. It’s a cozy, confidence-building learning space.” 🌿
+> “The best recipes are the ones that teach you something.” 🍲✨
 
 
 ## 📌 Credits
 
 Designed and written by **Constança Cunha**  
 © 2025 All rights reserved. Built with passion ✦
-
-> “The best recipes are the ones that teach you something.” 🍲✨
