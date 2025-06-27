@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SageBook Case Study — Data Analysis</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 SageBook</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statement.html">Hunt Statement</a></li>
+        <li><a href="research.html">Research Plan</a></li>
+        <li><a href="data.html" class="active">Data Analysis</a></li>
+        <li><a href="interview.html">Interview Details</a></li>
+        <li><a href="analysis.html">Competitive Analysis</a></li>
+        <li><a href="evaluation.html">Evaluation Plan</a></li>
+      </ul>      
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1 class="fade-in">Data Analysis Insights</h1>
+    <p class="fade-in">
+      Uncovering the behavioral patterns and emotional drivers behind cooking habits through quantitative and qualitative research.
+    </p>
+    <a href="#ci-models" class="cta fade-in">Explore Findings ↓</a>
+  </section>
+
+  <!-- CI Models Section -->
+  <section id="ci-models" class="section fade-in">
+    <h2>CI Models</h2>
+    
+    <div class="model-tabs">
+      <button class="tab-button active" data-tab="flow">Enhanced Flow Model</button>
+      <button class="tab-button" data-tab="cultural">Cultural Model</button>
+    </div>
+    
+    <div class="tab-content active" id="tab-flow">
+      <div class="model-container">
+        <div class="mermaid">
+          flowchart TD
+            A[User Opens SageBook] --> B{Motivation?}
+            B -->|"I need dinner NOW"| C[Quick Meal Generator]
+            B -->|"Want to learn properly"| D[Skill Library]
+            B -->|"Meal prep for week"| E[Batch Cooking Planner]
+            C --> F[3-Ingredient Recipes\nVoice-Guided Rush Mode]
+            D --> G[Technique Tutorials\nProgress Tracking]
+            E --> H[Groceries-to-Meals Calculator\nStorage Tips]
+            F & G & H --> I{Struggle Point?}
+            I -->|Confused| J[Community Hacks\nAI Assistant Demo]
+            I -->|Confident| K[Save to Cookbook\nShare Tweaks]
+            J & K --> L[Rate Experience\nEarn Time-Saver Badges]
+        </div>
+        <div class="insight-bubble">
+          <div class="bubble-header">Key Insight</div>
+          <div class="bubble-content">
+            The model reveals <strong>three distinct entry points</strong> based on emotional state: <strong>urgency</strong> (quick meals), <strong>curiosity</strong> (skill-building), and <strong>efficiency</strong> (meal prep). Time-pressed users often abandon apps when they can't immediately find "no-brainer" options.
+          </div>
+          <div class="bubble-highlight">
+            <span class="highlight-icon">💡</span>
+            <strong>Design Opportunity:</strong> Create a "Rush Mode" that hides advanced features during high-stress cooking.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="tab-cultural">
+      <div class="model-container">
+        <div class="chart-container">
+          <canvas id="culturalChart"></canvas>
+        </div>
+        <div class="insight-bubble">
+          <div class="bubble-header">New Findings</div>
+          <div class="bubble-content">
+            Interviews with parents and busy professionals exposed <strong>time poverty</strong> as the dominant barrier:
+            <ul class="styled-list">
+              <li><strong>45%</strong> prioritize speed over nutrition</li>
+              <li><strong>Cleanup avoidance</strong> leads to single-pot recipes</li>
+              <li><strong>Ingredient waste anxiety</strong> higher among budget-conscious users</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personas Section -->
+  <section id="personas" class="section fade-in">
+    <h2>Persona Deep Dive</h2>
+    
+    <div class="persona-selector">
+      <button class="persona-btn active" data-persona="annie">Annie</button>
+      <button class="persona-btn" data-persona="carlos">Carlos</button>
+      <button class="persona-btn" data-persona="tom">Tom</button>
+    </div>
+    
+    <!-- Annie -->
+    <div class="persona-carousel active" id="annie-persona">
+      <div class="persona-card">
+        <div class="persona-header">
+          <div class="persona-avatar">😰</div>
+          <h3>Annie</h3>
+          <div class="persona-tag">Beginner Cook</div>
+        </div>
+        <div class="persona-stats">
+          <div class="stat-item">
+            <div class="stat-value">23</div>
+            <div class="stat-label">Age</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Student</div>
+            <div class="stat-label">Occupation</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Pot</div>
+          </div>
+        </div>
+        <div class="persona-quote">
+          "I tried making pancakes once, and they turned into charcoal. Now I stick to cereal."
+        </div>
+        <button class="persona-details-btn">View Scenario →</button>
+      </div>
+      
+      <div class="persona-details">
+        <div class="details-grid">
+          <div class="detail-column">
+            <h4>Behavioral Insights</h4>
+            <p>Annie downloads cooking apps but abandons them when steps feel overwhelming (e.g., "Fold the egg whites gently"). She craves reassurance and fears failure.</p>
+            
+            <h4>Needs</h4>
+            <div class="pain-points">
+              <div class="point">
+                <div class="point-icon">👩‍🍳</div>
+                <div class="point-text">Ultra-clear guidance with visual demos</div>
+              </div>
+              <div class="point">
+                <div class="point-icon">⚠️</div>
+                <div class="point-text">Real-time mistake prevention</div>
+              </div>
+              <div class="point">
+                <div class="point-icon">🎉</div>
+                <div class="point-text">Celebration of small wins</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="detail-column">
+            <h4>Scenario Walkthrough</h4>
+            <div class="scenario-timeline">
+              <div class="timeline-item">
+                <div class="timeline-content">Attempts <strong>"Fail-Proof Scrambled Eggs"</strong> tutorial</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">App detects pan overheating via manual input</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">Animation shows ideal egg texture at each stage</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">Receives reassurance: <em>"It's okay to start with a pinch of salt"</em></div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">Earns <strong>"First Fluffy Eggs"</strong> badge</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--  Carlos -->
+    <div class="persona-carousel" id="carlos-persona">
+      <div class="persona-card">
+        <div class="persona-header">
+          <div class="persona-avatar">🧪</div>
+          <h3>Carlos</h3>
+          <div class="persona-tag">Experimental Cook</div>
+        </div>
+        <div class="persona-stats">
+          <div class="stat-item">
+            <div class="stat-value">30</div>
+            <div class="stat-label">Age</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Designer</div>
+            <div class="stat-label">Occupation</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">10+</div>
+            <div class="stat-label">Subs/Yr</div>
+          </div>
+        </div>
+        <div class="persona-quote">
+          "I don't need another app that just lists ingredients. Tell me WHY I'm doing this step."
+        </div>
+        <button class="persona-details-btn">View Scenario →</button>
+      </div>
+      
+      <div class="persona-details">
+        <div class="details-grid">
+          <div class="detail-column">
+            <h4>Behavioral Insights</h4>
+            <p>Carlos dislikes rigid recipes and values community knowledge. He follows chefs on YouTube but wishes he could ask them questions about techniques.</p>
+            
+            <h4>Needs</h4>
+            <div class="pain-points">
+              <div class="point">
+                <div class="point-icon">🔄</div>
+                <div class="point-text">Flexible recipes with substitutions</div>
+              </div>
+              <div class="point">
+                <div class="point-icon">🔬</div>
+                <div class="point-text">Food science explanations</div>
+              </div>
+              <div class="point">
+                <div class="point-icon">🎨</div>
+                <div class="point-text">Creative "what if?" scenarios</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="detail-column">
+            <h4>Scenario Walkthrough</h4>
+            <div class="scenario-timeline">
+              <div class="timeline-item">
+                <div class="timeline-content">Modifies <strong>sage-brown-butter pasta</strong> by adding walnuts</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">Checks community notes for walnut tips</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">Learns from <em>"Flavor Lab"</em> how nuts complement butter</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">Adds lemon zest and saves his version with notes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tom -->
+    <div class="persona-carousel" id="tom-persona">
+      <div class="persona-card">
+        <div class="persona-header">
+          <div class="persona-avatar">⏰</div>
+          <h3>Tom</h3>
+          <div class="persona-tag">Single Parent</div>
+        </div>
+        <div class="persona-stats">
+          <div class="stat-item">
+            <div class="stat-value">38</div>
+            <div class="stat-label">Age</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Nurse</div>
+            <div class="stat-label">Occupation</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5</div>
+            <div class="stat-label">"Safe" Meals</div>
+          </div>
+        </div>
+        <div class="persona-quote">
+          "If I can't find a recipe in three clicks, I'm ordering pizza."
+        </div>
+        <button class="persona-details-btn">View Scenario →</button>
+      </div>
+      
+      <div class="persona-details">
+        <div class="details-grid">
+          <div class="detail-column">
+            <h4>Behavioral Insights</h4>
+            <p>Tom's cooking is purely functional. He cycles through five "safe" meals his kid won't reject. He's aware of nutrition gaps but lacks bandwidth to change.</p>
+            
+            <h4>Needs</h4>
+            <div class="pain-points">
+              <div class="point">
+                <div class="point-icon">⚡</div>
+                <div class="point-text">3-tap recipes (≤5 ingredients, ≤20 mins)</div>
+              </div>
+              <div class="point">
+                <div class="point-icon">👶</div>
+                <div class="point-text">Picky-eater success rate tags</div>
+              </div>
+              <div class="point">
+                <div class="point-icon">🍳</div>
+                <div class="point-text">"Dump-and-go" slow cooker meals</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="detail-column">
+            <h4>Scenario Walkthrough</h4>
+            <div class="scenario-timeline">
+              <div class="timeline-item">
+                <div class="timeline-time">6:30 PM</div>
+                <div class="timeline-content">Opens <strong>"Emergency Dinner"</strong> mode</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-time">6:32 PM</div>
+                <div class="timeline-content">App suggests <em>"Zucchini Egg Scramble – 8 mins"</em></div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-time">6:40 PM</div>
+                <div class="timeline-content">Picky-eater tip: <em>"73% success rate with ages 6-8"</em></div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-time">7:00 PM</div>
+                <div class="timeline-content">Rates meal: <em>"Kid ate 60% – better than usual!"</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cross-Persona Synthesis -->
+  <section id="synthesis" class="section fade-in parallax-bg">
+    <h2>Patterns Across Personas</h2>
+    
+    <div class="synthesis-grid">
+      <div class="synthesis-card">
+        <div class="card-emoji">💬</div>
+        <h3>Communication Style</h3>
+        <div class="core-need">Tone Matters</div>
+        <div class="design-implication">
+          Annie needs reassurance, Carlos craves expertise, and Tom wants directness. The app adapts its voice based on user behavior patterns.
+        </div>
+      </div>
+      
+      <div class="synthesis-card">
+        <div class="card-emoji">🔄</div>
+        <h3>Flexibility</h3>
+        <div class="core-need">Adaptable Guidance</div>
+        <div class="design-implication">
+          All personas benefit from adjustable recipe complexity, from Annie's step-by-step to Carlos' experimental mode.
+        </div>
+      </div>
+      
+      <div class="synthesis-card">
+        <div class="card-emoji">🏆</div>
+        <h3>Motivation</h3>
+        <div class="core-need">Different Drivers</div>
+        <div class="design-implication">
+          Annie responds to encouragement, Carlos to knowledge sharing, and Tom to time savings. The reward system must be multifaceted.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Takeaways -->
+<section id="takeaways" class="section fade-in">
+    <h2>Key Takeaways</h2>
+    <div class="takeaway-cards">
+      <div class="takeaway-card">
+        <div class="card-front">
+          <div class="takeaway-icon">🎯</div>
+          <h3>Emotional First</h3>
+        </div>
+        <div class="card-back">
+          <p>Cooking is deeply tied to self-worth. Design must address emotional barriers before teaching skills.</p>
+        </div>
+      </div>
+      
+      <div class="takeaway-card">
+        <div class="card-front">
+          <div class="takeaway-icon">🧩</div>
+          <h3>Modular Learning</h3>
+        </div>
+        <div class="card-back">
+          <p>Break down cooking into atomic skills that can be mixed and matched based on user confidence levels.</p>
+        </div>
+      </div>
+      
+      <div class="takeaway-card">
+        <div class="card-front">
+          <div class="takeaway-icon">🌱</div>
+          <h3>Progressive Disclosure</h3>
+        </div>
+        <div class="card-back">
+          <p>Surface advanced options only when users demonstrate readiness, preventing overwhelm for beginners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Constança Cunha. All rights reserved.<br>Built with passion ✦ Last updated: June 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Mermaid
+    mermaid.initialize({ startOnLoad: true });
+    
+    // Cultural Model Chart
+    const culturalCtx = document.getElementById('culturalChart');
+    new Chart(culturalCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['No Time', 'Fear of Failure', 'Ingredient Waste', 'Cleanup Hassle', 'Boredom'],
+        datasets: [{
+          data: [45, 25, 15, 10, 5],
+          backgroundColor: [
+            '#7d9d87',
+            '#d4a373',
+            '#a5a58d',
+            '#e9c46a',
+            '#f4a261'
+          ],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        cutout: '60%',
+        plugins: {
+          legend: {
+            position: 'right',
+            labels: {
+              font: {
+                family: 'Georgia',
+                size: 14
+              },
+              padding: 20,
+              usePointStyle: true,
+              pointStyle: 'circle'
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `${context.label}: ${context.raw}%`;
+              }
+            }
+          }
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      }
+    });
+    
+    // Persona Carousel
+    const personaBtns = document.querySelectorAll('.persona-btn');
+    personaBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Remove active class from all buttons and carousels
+        document.querySelectorAll('.persona-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.persona-carousel').forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding carousel
+        this.classList.add('active');
+        const persona = this.getAttribute('data-persona');
+        document.getElementById(`${persona}-persona`).classList.add('active');
+      });
+    });
+    
+    // Persona Details Toggle
+    document.querySelectorAll('.persona-details-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const details = this.closest('.persona-carousel').querySelector('.persona-details');
+        details.classList.toggle('active');
+        this.textContent = details.classList.contains('active') ? 'Hide Scenario ←' : 'View Scenario →';
+      });
+    });
+  </script>
+</body>
+</html>

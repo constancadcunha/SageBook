@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SageBook — Competitive Analysis</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌿 SageBook</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statement.html">Hunt Statement</a></li>
+        <li><a href="research.html">Research Plan</a></li>
+        <li><a href="data.html">Data Analysis</a></li>
+        <li><a href="interview.html">Interview Details</a></li>
+        <li><a href="analysis.html" class="active">Competitive Analysis</a></li>
+        <li><a href="evaluation.html">Evaluation Plan</a></li>
+      </ul>      
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1 class="fade-in">Competitive Analysis</h1>
+    <p class="fade-in">
+      Understanding the digital cooking landscape to position SageBook as a unique, delightful learning experience.
+    </p>
+    <a href="#purpose" class="cta fade-in">Explore Findings ↓</a>
+  </section>
+
+  <!-- Purpose Section -->
+  <section id="purpose" class="section fade-in">
+    <h2>🧭 Purpose of Analysis</h2>
+    <p>
+      To understand the competitive landscape of digital cooking platforms, evaluate how SageBook stands out, identify gaps in the market, and validate design and feature decisions through comparative research.
+    </p>
+  </section>
+
+  <!-- Unique Value Proposition -->
+  <section class="section fade-in">
+    <h2>🏆 SageBook's Unique Value Proposition</h2>
+    <div class="highlight-box">
+      <p>A cozy, gamified, learning-first cooking app that teaches foundational culinary techniques, guides users step-by-step, and celebrates progress — all wrapped in a cottagecore aesthetic.</p>
+    </div>
+    <p>Most competitors are either:</p>
+    <ul>
+      <li>Recipe libraries (e.g., NYT Cooking, Tasty)</li>
+      <li>Video-based learning (e.g., MasterClass, Rouxbe)</li>
+      <li>Cooking management tools (e.g., Paprika, Whisk)</li>
+      <li>Or focus on community content (e.g., Cookpad, SideChef)</li>
+    </ul>
+    <p>SageBook combines the <strong>pedagogy of cooking</strong> (not just recipes), the <strong>engagement of games</strong>, and the <strong>warmth of lifestyle branding</strong>.</p>
+  </section>
+
+  <!-- Comparative Table -->
+  <section class="section fade-in">
+    <h2>📊 Comparative Table of Competitors</h2>
+    <div class="table-container">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature / App</th>
+            <th><strong>SageBook</strong></th>
+            <th>Tasty</th>
+            <th>MasterClass</th>
+            <th>Whisk</th>
+            <th>SideChef</th>
+            <th>NYT Cooking</th>
+            <th>Kitchen Stories</th>
+            <th>Rouxbe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Step-by-Step Recipes</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌ (long-form)</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Skill Tutorials / Technique Learning</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-limited">Limited</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Gamification (points, badges)</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+          </tr>
+          <tr>
+            <td><strong>Progress Tracking / Mastery</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Ingredient Substitution Guide</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+          </tr>
+          <tr>
+            <td><strong>Community Tips on Steps</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-limited">Limited</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+          </tr>
+          <tr>
+            <td><strong>Shopping List Integration</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Personalized Recipe Suggestions</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-limited">Limited</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Narration / Visual Guidance</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-limited">Limited</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Mobile Optimization</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+          <tr>
+            <td><strong>Cottagecore / Cozy Aesthetic</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-luxury">✨ Luxurious</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-traditional">Traditional</td>
+            <td class="feature-modern">Clean-modern</td>
+            <td class="feature-professional">Professional</td>
+          </tr>
+          <tr>
+            <td><strong>Educational Focus</strong></td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-yes">✅</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-no">❌</td>
+            <td class="feature-moderate">Moderate</td>
+            <td class="feature-yes">✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Competitor Deep Dive -->
+  <section class="section fade-in">
+    <h2>🧪 Competitor Deep Dive</h2>
+    
+    <div class="competitor-tabs">
+      <button class="tab-button active" data-tab="tasty">Tasty</button>
+      <button class="tab-button" data-tab="masterclass">MasterClass</button>
+      <button class="tab-button" data-tab="sidechef">SideChef</button>
+      <button class="tab-button" data-tab="rouxbe">Rouxbe</button>
+      <button class="tab-button" data-tab="nyt">NYT Cooking</button>
+      <button class="tab-button" data-tab="kitchen">Kitchen Stories</button>
+    </div>
+    
+    <!-- Tasty -->
+    <div class="tab-content active" id="tab-tasty">
+      <div class="competitor-card">
+        <div class="competitor-header">
+          <h3>Tasty (Buzzfeed)</h3>
+          <div class="competitor-tag">Recipe Library</div>
+        </div>
+        <div class="competitor-grid">
+          <div class="competitor-column">
+            <h4>Strengths</h4>
+            <ul>
+              <li>Widely known, strong video-first recipe presentation</li>
+              <li>Huge recipe database</li>
+              <li>Good for quick browsing</li>
+            </ul>
+            
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>Little to no educational focus</li>
+              <li>No progress tracking or skill-building logic</li>
+              <li>Lacks personalization</li>
+            </ul>
+          </div>
+          <div class="competitor-column">
+            <h4>UX Notes</h4>
+            <p>Visual-heavy but lacks depth. Recipe steps can feel too fast-paced or oversimplified.</p>
+            
+            <h4>Positioning</h4>
+            <p>Fun, accessible food inspiration. Not designed to teach or build confidence in culinary skills.</p>
+          </div>
+        </div>
+        <div class="sagebook-advantage">
+          <div class="advantage-icon">🔎</div>
+          <div class="advantage-text"><strong>SageBook advantage:</strong> Deeper guidance, education-first, gamified learning.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MasterClass -->
+    <div class="tab-content" id="tab-masterclass">
+      <div class="competitor-card">
+        <div class="competitor-header">
+          <h3>MasterClass (Cooking Section)</h3>
+          <div class="competitor-tag">Premium Video Learning</div>
+        </div>
+        <div class="competitor-grid">
+          <div class="competitor-column">
+            <h4>Strengths</h4>
+            <ul>
+              <li>Premium instructional videos from famous chefs</li>
+              <li>Beautiful cinematic presentation</li>
+            </ul>
+            
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>Passive learning</li>
+              <li>No interactivity</li>
+              <li>No community or recipe customization</li>
+              <li>Expensive subscription</li>
+            </ul>
+          </div>
+          <div class="competitor-column">
+            <h4>UX Notes</h4>
+            <p>Beautiful cinematic presentation, but lacks utility for daily cooking.</p>
+            
+            <h4>Positioning</h4>
+            <p>Aspirational and cinematic learning for affluent learners.</p>
+          </div>
+        </div>
+        <div class="sagebook-advantage">
+          <div class="advantage-icon">🔎</div>
+          <div class="advantage-text"><strong>SageBook advantage:</strong> Hands-on, interactive, mobile-friendly, affordable.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- SideChef -->
+    <div class="tab-content" id="tab-sidechef">
+      <div class="competitor-card">
+        <div class="competitor-header">
+          <h3>SideChef</h3>
+          <div class="competitor-tag">Smart Kitchen Partner</div>
+        </div>
+        <div class="competitor-grid">
+          <div class="competitor-column">
+            <h4>Strengths</h4>
+            <ul>
+              <li>Guided cooking steps with timers</li>
+              <li>Voice controls</li>
+              <li>Integrations with smart appliances</li>
+            </ul>
+            
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>UI can feel corporate/functional</li>
+              <li>Limited learning features</li>
+              <li>Emphasis on execution over education</li>
+            </ul>
+          </div>
+          <div class="competitor-column">
+            <h4>UX Notes</h4>
+            <p>Functional design, focused on convenience more than delight or learning.</p>
+            
+            <h4>Positioning</h4>
+            <p>Smart kitchen partner.</p>
+          </div>
+        </div>
+        <div class="sagebook-advantage">
+          <div class="advantage-icon">🔎</div>
+          <div class="advantage-text"><strong>SageBook advantage:</strong> Emotional design, cozy learning experience, progress gamification.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Rouxbe -->
+    <div class="tab-content" id="tab-rouxbe">
+      <div class="competitor-card">
+        <div class="competitor-header">
+          <h3>Rouxbe</h3>
+          <div class="competitor-tag">Professional Training</div>
+        </div>
+        <div class="competitor-grid">
+          <div class="competitor-column">
+            <h4>Strengths</h4>
+            <ul>
+              <li>Professional culinary training platform</li>
+              <li>Offers structured courses and certifications</li>
+            </ul>
+            
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>Not beginner-friendly</li>
+              <li>Academic tone</li>
+              <li>Subscription model</li>
+              <li>Low personalization</li>
+              <li>Minimal mobile appeal</li>
+            </ul>
+          </div>
+          <div class="competitor-column">
+            <h4>UX Notes</h4>
+            <p>Text-heavy and formal.</p>
+            
+            <h4>Positioning</h4>
+            <p>Professional culinary training for serious learners.</p>
+          </div>
+        </div>
+        <div class="sagebook-advantage">
+          <div class="advantage-icon">🔎</div>
+          <div class="advantage-text"><strong>SageBook advantage:</strong> Beginner-friendly, approachable, fun-focused.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- NYT Cooking -->
+    <div class="tab-content" id="tab-nyt">
+      <div class="competitor-card">
+        <div class="competitor-header">
+          <h3>NYT Cooking</h3>
+          <div class="competitor-tag">Culinary Journalism</div>
+        </div>
+        <div class="competitor-grid">
+          <div class="competitor-column">
+            <h4>Strengths</h4>
+            <ul>
+              <li>High-quality recipes</li>
+              <li>Editorial tone</li>
+              <li>Recipe collections</li>
+              <li>User ratings</li>
+            </ul>
+            
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>No tutorials</li>
+              <li>Recipes can be advanced</li>
+              <li>No interactivity or gamification</li>
+            </ul>
+          </div>
+          <div class="competitor-column">
+            <h4>UX Notes</h4>
+            <p>Elegant but not optimized for learning.</p>
+            
+            <h4>Positioning</h4>
+            <p>Trusted culinary journalism.</p>
+          </div>
+        </div>
+        <div class="sagebook-advantage">
+          <div class="advantage-icon">🔎</div>
+          <div class="advantage-text"><strong>SageBook advantage:</strong> Teaches "how," not just "what." Adds interactivity and progression.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Kitchen Stories -->
+    <div class="tab-content" id="tab-kitchen">
+      <div class="competitor-card">
+        <div class="competitor-header">
+          <h3>Kitchen Stories</h3>
+          <div class="competitor-tag">Stylish Inspiration</div>
+        </div>
+        <div class="competitor-grid">
+          <div class="competitor-column">
+            <h4>Strengths</h4>
+            <ul>
+              <li>Clean design</li>
+              <li>Good instructional videos</li>
+              <li>Step-by-step guidance</li>
+            </ul>
+            
+            <h4>Weaknesses</h4>
+            <ul>
+              <li>Limited gamification or tracking</li>
+              <li>Community tips are not step-specific</li>
+            </ul>
+          </div>
+          <div class="competitor-column">
+            <h4>UX Notes</h4>
+            <p>Polished UI, but lacks emotional depth or a playful tone.</p>
+            
+            <h4>Positioning</h4>
+            <p>Stylish, semi-educational inspiration.</p>
+          </div>
+        </div>
+        <div class="sagebook-advantage">
+          <div class="advantage-icon">🔎</div>
+          <div class="advantage-text"><strong>SageBook advantage:</strong> Emotional design, robust community interactivity, badges & streaks.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Gaps -->
+  <section class="section fade-in">
+    <h2>🧠 Market Gaps Identified</h2>
+    <div class="gaps-container">
+      <table class="gaps-table">
+        <thead>
+          <tr>
+            <th>Gap</th>
+            <th>Opportunity for SageBook</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lack of interactive learning in recipe apps</strong></td>
+            <td>Skill tutorials, progressive learning paths, tips to avoid mistakes</td>
+          </tr>
+          <tr>
+            <td><strong>Few cozy/lifestyle-themed cooking apps</strong></td>
+            <td>Cottagecore design helps create emotional attachment and warmth</td>
+          </tr>
+          <tr>
+            <td><strong>Gamification in cooking remains rare</strong></td>
+            <td>Badges, streaks, mastery levels = motivation & habit formation</td>
+          </tr>
+          <tr>
+            <td><strong>Lack of peer-to-peer knowledge</strong></td>
+            <td>Community tips by recipe <em>step</em> adds unique social learning</td>
+          </tr>
+          <tr>
+            <td><strong>No app tracks <em>growth</em> in cooking</strong></td>
+            <td>Achievements, skills mastered, and cooking streaks foster confidence</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Strategic Positioning -->
+  <section class="section fade-in">
+    <h2>🎯 Strategic Positioning Summary</h2>
+    <div class="positioning-container">
+      <table class="positioning-table">
+        <thead>
+          <tr>
+            <th>Axis</th>
+            <th>SageBook's Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Utility vs Learning</strong></td>
+            <td>Strongly on <strong>learning</strong>, not just recipe discovery</td>
+          </tr>
+          <tr>
+            <td><strong>Fun vs Formal</strong></td>
+            <td>Warm, friendly, cozy — NOT professional or stiff</td>
+          </tr>
+          <tr>
+            <td><strong>Passive vs Interactive</strong></td>
+            <td>Fully interactive, with visual/audio prompts</td>
+          </tr>
+          <tr>
+            <td><strong>Community vs Isolation</strong></td>
+            <td>Community-powered tips per recipe step</td>
+          </tr>
+          <tr>
+            <td><strong>Skill Level</strong></td>
+            <td>All levels, with strong support for beginners</td>
+          </tr>
+          <tr>
+            <td><strong>Design Aesthetic</strong></td>
+            <td>Unique <strong>cottagecore</strong> vibe stands out from generic UIs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Differentiators -->
+  <section class="section fade-in">
+    <h2>🧩 Competitive Differentiators – TL;DR</h2>
+    <div class="differentiators-grid">
+      <div class="differentiator-card">
+        <div class="diff-icon">✅</div>
+        <p><strong>Teaches how to cook,</strong> not just what to cook</p>
+      </div>
+      <div class="differentiator-card">
+        <div class="diff-icon">✅</div>
+        <p><strong>Step-based community tips</strong> – a unique social feature</p>
+      </div>
+      <div class="differentiator-card">
+        <div class="diff-icon">✅</div>
+        <p><strong>Cottagecore aesthetic</strong> – adds emotional, lifestyle appeal</p>
+      </div>
+      <div class="differentiator-card">
+        <div class="diff-icon">✅</div>
+        <p><strong>Gamified progress tracking</strong> – rare in cooking apps</p>
+      </div>
+      <div class="differentiator-card">
+        <div class="diff-icon">✅</div>
+        <p><strong>Beginner-friendly</strong> yet scalable to advanced skills</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Implications -->
+  <section class="section fade-in">
+    <h2>💬 How This Informs Design Decisions</h2>
+    <div class="implications-container">
+      <div class="implication-item">
+        <div class="implication-icon">🎮</div>
+        <div class="implication-text">
+          <strong>Gamification & Progress:</strong> No major competitor offers this in-depth — it becomes a clear hook.
+        </div>
+      </div>
+      <div class="implication-item">
+        <div class="implication-icon">🎨</div>
+        <div class="implication-text">
+          <strong>Aesthetic Choices:</strong> The cozy, vintage vibe differentiates visually and emotionally.
+        </div>
+      </div>
+      <div class="implication-item">
+        <div class="implication-icon">📚</div>
+        <div class="implication-text">
+          <strong>Skill Library:</strong> Validated by lack of foundational education elsewhere.
+        </div>
+      </div>
+      <div class="implication-item">
+        <div class="implication-icon">👥</div>
+        <div class="implication-text">
+          <strong>Community Tips:</strong> Supports knowledge sharing and enhances retention.
+        </div>
+      </div>
+      <div class="implication-item">
+        <div class="implication-icon">🎙️</div>
+        <div class="implication-text">
+          <strong>Voice/Visual Prompts:</strong> Speaks to user accessibility needs in the kitchen.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Constança Cunha. All rights reserved.<br>Built with passion ✦ Last updated: June 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
