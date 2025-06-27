@@ -1,6 +1,6 @@
 # 🌿 SageBook – UX/UI Case Study  
 **An interactive cooking and baking learning app**  
-[**View the Live Case Study →**](https://your-username.github.io/sagebook-case-study)  
+**View the Live Case Study →**[**Here**](https://constancadcunha.github.io/SageBook/)  
 
 ---
 
@@ -70,7 +70,7 @@ To validate design decisions, SageBook includes a **robust evaluation plan** fea
 ## 📁 How to View the Project
 
 👉 Visit the live case study:  
-**[TBD](https://your-username.github.io/sagebook-case-study)**  
+**[SageBook Case Study](https://constancadcunha.github.io/SageBook/)**  
 
 🧾 Or, download and open `index.html` locally in your browser.
 
