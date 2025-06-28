@@ -70,10 +70,11 @@ tabButtons.forEach(button => {
 
 // === Highlight active nav link based on URL ===
 const navLinks = document.querySelectorAll('.nav-links a');
-const currentPage = location.pathname.split('/').pop();
+let currentPage = location.pathname.split('/').pop() || 'index.html';
 
 navLinks.forEach(link => {
-  if (link.getAttribute('href') === currentPage) {
+  const href = link.getAttribute('href');
+  if (href === currentPage || (currentPage === 'index.html' && (href === 'index.html' || href === './' || href === '/'))) {
     link.classList.add('active');
   }
 });
