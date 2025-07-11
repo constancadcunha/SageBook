@@ -197,6 +197,10 @@ header {
     background: #f1e3d3;
 }
 
+.flip-card-back p {
+    font-size: 0.8rem;
+}
+
 .flip-card-back {
     background: #7d9d87;
     color: white;
